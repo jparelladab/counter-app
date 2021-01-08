@@ -18,7 +18,7 @@ class Counters extends Component {
     console.log('Counters - Render');
 
     //Using object destructuring
-    const {onReset, onDelete, onIncrement, counters} = this.props;
+    const {onReset, onDelete, onIncrement, onDecrement, counters} = this.props;
 
     return (
       <div>
@@ -39,6 +39,7 @@ class Counters extends Component {
               id={counter.id}*/
 
               onIncrement={ onIncrement }
+              onDecrement={ onDecrement }
 
               counter={counter}
             >
