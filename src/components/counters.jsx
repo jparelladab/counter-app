@@ -27,6 +27,8 @@ class Counters extends Component {
           onClick={onReset}
         >Reset
         </button>
+        <div className="counters-grid">
+
         { counters.map ( counter =>
 
             <Counter
@@ -47,6 +49,7 @@ class Counters extends Component {
             </Counter>
 
           ) }
+        </div>
       </div>
     );
   }
