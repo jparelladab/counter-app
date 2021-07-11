@@ -22,7 +22,7 @@ class Counter extends Component {
   // }
 
 //Constructor is a good place for modifying props before mounting
-  constructor(props){
+  constructor(){
     super();
     console.log('counter constructor');
     // props.counter.value = props.counter.value + 1;
